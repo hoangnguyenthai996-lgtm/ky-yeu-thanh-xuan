@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Kỷ Yếu Thanh Xuân</title>
+
+<style>
+
+/* ===== NỀN WEB ===== */
+body{
+margin:0;
+font-family:Segoe UI;
+background:linear-gradient(135deg,#ffd6e7,#d6f0ff);
+scroll-behavior:smooth;
+}
+
+/* ===== MENU ===== */
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:#ff5fa2;
+padding:15px;
+text-align:center;
+z-index:999;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:15px;
+font-weight:bold;
+font-size:18px;
+}
+
+nav a:hover{
+color:yellow;
+}
+
+/* ===== SECTION ===== */
+section{
+padding:100px 40px;
+min-height:100vh;
+}
+
+h1{
+text-align:center;
+color:#ff2e88;
+}
+
+/* ===== ẢNH LỚP ===== */
+.album{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:100px;
+}
+
+.album img{
+width:1000px;
+height:820px;
+object-fit:cover;
+border-radius:100px;
+box-shadow:0 50px 100px rgba(0,0,0,0.3);
+}
+
+/* ===== THÀNH VIÊN ===== */
+.container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:20px;
+padding:15px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+.card img{
+width:100%;
+height:260px;
+object-fit:cover;
+border-radius:15px;
+}
+
+.name{
+margin-top:10px;
+font-weight:bold;
+color:#ff2e88;
+}
+
+/* ===== VIDEO ===== */
+.video{
+display:flex;
+justify-content:center;
+}
+
+video{
+width:80%;
+border-radius:20px;
+}
+
+/* ===== FOOTER ===== */
+footer{
+text-align:center;
+padding:20px;
+background:#ff5fa2;
+color:white;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- MENU -->
+<nav>
+<a href="#home">Trang Chủ</a>
+<a href="#members">Thành viên</a>
+<a href="#lop10">Lớp 10</a>
+<a href="#lop11">Lớp 11</a>
+<a href="#lop12">Lớp 12</a>
+<a href="#video">Video</a>
+</nav>
+
+<!-- TRANG CHỦ -->
+<section id="home">
+<h1>📸 THANH XUÂN CỦA CHÚNG TA </h1>
+
+<div class="album">
+<img src="anh.jpg">
+<img src="1013.jpg">
+</div>
+</section>
+
+<!-- THÀNH VIÊN -->
+<section id="members">
+<h1>👨‍🎓 43 Thành Viên</h1>
+
+<div class="container">
+
+<!-- THÀNH VIÊN 1 -->
+<div class="card">
+<img src="images/tv1.jpg">
+<div class="name">Nguyễn Thị Cẩm Loan</div>
+</div>
+
+<!-- THÀNH VIÊN 2 -->
+<div class="card">
+<img src="images/tv2.jpg">
+<div class="name">Trần Minh Trung</div>
+</div>
+
+<!-- THÀNH VIÊN 3 -->
+<div class="card">
+<img src="minh1.jpg">
+<div class="name">Trần Khải Minh</div>
+</div>
+
+<!-- THÀNH VIÊN 4 -->
+<div class="card">
+<img src="ngoc1.jpg">
+<div class="name">Nguyễn Thảo Bích Ngọc</div>
+</div>
+
+<!-- THÀNH VIÊN 5 -->
+<div class="card">
+<img src="vy1.jpg">
+<div class="name">Phạm Hoàng Thảo Vy</div>
+</div>
+<!-- THÀNH VIÊN 1 -->
+<div class="card">
+<img src="na.jpg">
+<div class="name">Nguyễn Ngọc Trâm Anh</div>
+</div>
+
+<!-- THÀNH VIÊN 2 -->
+<div class="card">
+<img src="images/tv2.jpg">
+<div class="name">Trịnh Thị Trâm Anh</div>
+</div>
+
+<!-- THÀNH VIÊN 3 -->
+<div class="card">
+<img src="images/tv3.jpg">
+<div class="name">Trương Đoàn Hồng Ánh </div>
+</div>
+
+<!-- THÀNH VIÊN 4 -->
+<div class="card">
+<img src="anh1.jpg">
+<div class="name">Nguyễn Thị Ngọc Ánh</div>
+</div>
+
+<!-- THÀNH VIÊN 5 -->
+<div class="card">
+<img src="images/tv5.jpg">
+<div class="name">Nguyễn Ngọc Bích</div>
+</div>
+<!-- THÀNH VIÊN 1 -->
+<div class="card">
+<img src="anh2.jpg">
+<div class="name">Nguyễn Trọng Tuấn Anh</div>
+</div>
+
+<!-- THÀNH VIÊN 2 -->
+<div class="card">
+<img src="images/tv2.jpg">
+<div class="name">Nguyễn Gia Bảo</div>
+</div>
+
+<!-- THÀNH VIÊN 3 -->
+<div class="card">
+<img src="chien.jpg">
+<div class="name">Trần Minh Chiến</div>
+</div>
+
+<!-- THÀNH VIÊN 4 -->
+<div class="card">
+<img src="dat.jpg">
+<div class="name">Lâm Tấn Đạt</div>
+</div>
+
+<!-- THÀNH VIÊN 5 -->
+<div class="card">
+<img src="hung.jpg">
+<div class="name">Lâm Kiến Hùng</div>
+</div>
+<!-- THÀNH VIÊN 1 -->
+<div class="card">
+<img src="images/tv1.jpg">
+<div class="name">Huỳnh Bảo Châu</div>
+</div>
+
+<!-- THÀNH VIÊN 2 -->
+<div class="card">
+<img src="dung.jpg">
+<div class="name">Đinh Thị Ngọc Dung</div>
+</div>
+
+<!-- THÀNH VIÊN 3 -->
+<div class="card">
+<img src="images/tv3.jpg">
+<div class="name">Dương Nguyễn Hương Giang</div>
+</div>
+
+<!-- THÀNH VIÊN 4 -->
+<div class="card">
+<img src="giang.jpg">
+<div class="name">Đinh Thị Hương Giang</div>
+</div>
+
+<!-- THÀNH VIÊN 5 -->
+<div class="card">
+<img src="han.jpg">
+<div class="name">Võ Trương Mỹ Hân </div>
+</div>
+<!-- THÀNH VIÊN 1 -->
+<div class="card">
+<img src="han.jpg">
+<div class="name">Nguyễn Trần Tuấn Khang</div>
+</div>
+
+<!-- THÀNH VIÊN 2 -->
+<div class="card">
+<img src="images/tv2.jpg">
+<div class="name">Võ Trung Khang</div>
+</div>
+
+<!-- THÀNH VIÊN 3 -->
+<div class="card">
+<img src="long.jpg">
+<div class="name">Trần Hoàng Long</div>
+</div>
+
+<!-- THÀNH VIÊN 4 -->
+<div class="card">
+<img src="minh.jpg">
+<div class="name">Vũ Tuấn Minh</div>
+</div>
+
+<!-- THÀNH VIÊN 5 -->
+<div class="card">
+<img src="images/tv5.jpg">
+<div class="name">Bùi Quốc Tâm</div>
+</div>
+<!-- THÀNH VIÊN 1 -->
+<div class="card">
+<img src="ngoc.jpg">
+<div class="name">Nguyễn Thị Hồng Ngọc</div>
+</div>
+
+<!-- THÀNH VIÊN 2 -->
+<div class="card">
+<img src="nhi1.jpg">
+<div class="name">Đoàn Lâm Xuân Nhi</div>
+</div>
+
+<!-- THÀNH VIÊN 3 -->
+<div class="card">
+<img src="images/tv3.jpg">
+<div class="name">Phạm Thị Ngọc Nhi</div>
+</div>
+
+<!-- THÀNH VIÊN 4 -->
+<div class="card">
+<img src="phung2.jpg">
+<div class="name">Nguyễn Thị Kim Phụng</div>
+</div>
+
+<!-- THÀNH VIÊN 5 -->
+<div class="card">
+<img src="quynh.jpg">
+<div class="name">Mai Ngọc Phương Quỳnh</div>
+</div>
+<!-- THÀNH VIÊN 1 -->
+<div class="card">
+<img src="tâm.jpg">
+<div class="name">Đoàn Nguyễn Minh Tâm</div>
+</div>
+
+<!-- THÀNH VIÊN 2 -->
+<div class="card">
+<img src="images/tv2.jpg">
+<div class="name">Nguyễn Lê Trí</div>
+</div>
+
+<!-- THÀNH VIÊN 3 -->
+<div class="card">
+<img src="images/tv3.jpg">
+<div class="name">Tạ Văn Vương</div>
+</div>
+
+<!-- THÀNH VIÊN 4 -->
+<div class="card">
+<img src="images/tv4.jpg">
+<div class="name">Hoàng Nguyên Thái</div>
+</div>
+
+<!-- THÀNH VIÊN 5 -->
+<div class="card">
+<img src="images/tv5.jpg">
+<div class="name">Hoàng Nguyễn Anh Thư</div>
+</div>
+<!-- THÀNH VIÊN 1 -->
+<div class="card">
+<img src="images/tv1.jpg">
+<div class="name">Phạm Thanh Bảo Thy</div>
+</div>
+
+<!-- THÀNH VIÊN 2 -->
+<div class="card">
+<img src="tien.jpg">
+<div class="name">Phạm Ngọc Thủy Tiên</div>
+</div>
+
+<!-- THÀNH VIÊN 3 -->
+<div class="card">
+<img src="trang1.jpg">
+<div class="name">Nguyễn Hoàng Quỳnh Trang</div>
+</div>
+
+<!-- THÀNH VIÊN 4 -->
+<div class="card">
+<img src="images/tv4.jpg">
+<div class="name">Nguyễn Thị Thanh Tuyền</div>
+</div>
+
+<!-- THÀNH VIÊN 5 -->
+<div class="card">
+<img src="images/tv5.jpg">
+<div class="name">Nguyễn Ngọc Vũ Uyên </div>
+</div>
+<!-- THÀNH VIÊN 1 -->
+<div class="card">
+<img src="vy.jpg">
+<div class="name">Nguyễn Trần Thảo Vy</div>
+</div>
+
+<!-- THÀNH VIÊN 2 -->
+<div class="card">
+<img src="images/tv2.jpg">
+<div class="name">Phan Hà Vy</div>
+</div>
+
+<!-- THÀNH VIÊN 3 -->
+<div class="card">
+<img src="yen.jpg">
+<div class="name">Bùi Ngọc Yến</div>
+</div>
+
+
+
+</div>
+</section>
+
+</div>
+</section>
+<!-- LỚP 10 -->
+<section id="lop10">
+<h1>✨ Kỷ Niệm Lớp 10</h1>
+<div class="album">
+<img src="101.jpg">
+<img src="104.jpg">
+<img src="107.jpg">
+<img src="105.jpg">
+<img src="106.jpg">
+<img src="102.jpg">
+<img src="108.jpg">
+<img src="109.jpg">
+<img src="1010.jpg">
+<img src="1011.jpg">
+<img src="1012.jpg">
+<img src="1015.jpg">
+<img src="1014.jpg">
+<img src="1016.jpg">
+<img src="1017.jpg">
+<img src="1018.jpg">
+<img src="1019.jpg">
+<img src="1020.jpg">
+</div>
+</section>
+
+<!-- LỚP 11 -->
+<section id="lop11">
+<h1>✨ Kỷ Niệm Lớp 11</h1>
+<div class="album">
+<img src="111.jpg">
+<img src="112.jpg">
+<img src="113.jpg">
+<img src="114.jpg">
+<img src="115.jpg">
+<img src="116.jpg">
+<img src="117.jpg">
+<img src="118.jpg">
+<img src="119.jpg">
+<img src="1110.jpg">
+<img src="1111.jpg">
+<img src="1114.jpg">
+
+</div>
+</section>
+
+<!-- LỚP 12 -->
+<section id="lop12">
+<h1>✨ Kỷ Niệm Lớp 12</h1>
+<div class="album">
+<img src="121.jpg">
+<img src="122.jpg">
+<img src="123.jpg">
+<img src="124.jpg">
+<img src="125.jpg">
+<img src="126.jpg">
+<img src="127.jpg">
+<img src="128.jpg">
+<img src="129.jpg">
+<img src="1210.jpg">
+<img src="1215.jpg">
+<img src="1211.jpg">
+<img src="1212.jpg">
+<img src="1213.jpg">
+<img src="1214.jpg">
+<img src="1216.jpg">
+<img src="1217.jpg">
+<img src="1218.jpg">
+<img src="1219.jpg">
+<img src="1220.jpg">
+<img src="1221.jpg">
+<img src="1222.jpg">
+<img src="1223.jpg">
+<img src="1224.jpg">
+<img src="1225.jpg">
+<img src="1226.jpg">
+<img src="1227.jpg">
+<img src="1228.jpg">
+<img src="1229.jpg">
+<img src="1230.jpg">
+<img src="1231.jpg">
+
+</div>
+</section>
+
+<!-- VIDEO -->
+<section id="video">
+<h1>🎬 Video Kỷ Niệm</h1>
+<div class="video">
+<video controls>
+<source src="thanhxuan.mp4" type="video/mp4">
+</video>
+</div>
+</section>
+<h1> THANH XUÂN GỬI LẠI MÁI TRƯỜNG </h1>
+<h2>
+* Lời tri ân người dẫn lối </h2>
+<h2>
+Thời gian trôi nhanh thật… Mới ngày nào chúng em còn bỡ ngỡ bước vào lớp học với biết bao lo lắng và xa lạ, vậy mà hôm nay đã đứng trước ngưỡng cửa chia tay mái trường. Ba năm học không phải là quãng thời gian quá dài của cuộc đời, nhưng lại đủ để trở thành một phần thanh xuân đẹp nhất của chúng em. Thầy và cô không chỉ dạy chúng em kiến thức mà còn dạy cách làm người, cách sống tử tế, biết cố gắng và biết trưởng thành sau những lần vấp ngã. Những lời nhắc nhở nghiêm khắc, những lần quan tâm âm thầm, hay ánh mắt lo lắng mỗi khi lớp gặp khó khăn tất cả đều là tình thương mà có lẽ sau này chúng em mới hiểu hết giá trị.Có thể đôi lúc chúng em còn vô tư, còn nghịch ngợm, còn khiến thầy và cô phải buồn lòng. Nhưng phía sau những điều chưa hoàn hảo ấy là tình cảm chân thành và sự kính trọng mà chúng em luôn dành cho thầy và cô . Cảm ơn thầy và cô vì đã kiên nhẫn đồng hành cùng chúng em trong suốt hành trình trưởng thành.
+</h2>
+<h2>
+* Lời tri ân thanh xuân
+</h2>
+<h2>
+Chúng ta đã cùng nhau trải qua biết bao kỷ niệm: những giờ học ồn ào, những lần kiểm tra hồi hộp, những buổi sinh hoạt lớp đầy tiếng cười, những lúc cùng nhau cố gắng vì một mục tiêu chung. Có vui, có buồn, có hiểu lầm rồi lại làm hòa tất cả đã tạo nên một thanh xuân mà sau này dù đi đâu, chúng ta cũng sẽ nhớ mãi.Mai này mỗi người sẽ đi trên một con đường khác nhau, gặp những con người mới, những thử thách mới. Nhưng mong rằng, khi nhớ về nhau, chúng ta vẫn luôn mỉm cười vì đã từng là một phần tuổi trẻ của nhau. Mong rằng tất cả chúng ta sẽ luôn giữ được sự nhiệt huyết, lòng tốt và ước mơ của những ngày còn ngồi chung một lớp học.
+</h2>
+<h1>
+Thanh xuân rồi sẽ khép lại</h1>
+<h1>
+Xin cảm ơn Thầy và Cô người đã chắp cánh cho những ước mơ.</h1>
+<h1>
+Xin cảm ơn lớp mình vì đã cùng nhau tạo nên một thời thanh xuân thật đẹp.
+</h1>
+<h1> phungj </h1>
+<footer>
+💖 Kỷ yếu lớp — Thanh xuân chúng ta 💖
+</footer>
+
+</body>
+</html>
